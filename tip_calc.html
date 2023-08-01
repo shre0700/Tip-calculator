@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="tip_calc.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sub1">
+            <h1>Charles' Tip Calculator</h1>
+        </div>
+        <div class="sub2">
+            <p>How much was your bill?</p>
+            <span>$</span><input type="text" id ="total_amt" class="total_amt">
+        </div>
+        <div class="sub3">
+            <p>How was our service?</p>
+            <select id="tip_rating" class="dropdown">
+                <option value="">Rate our service</option>
+                <option value="30">30% - Excellent</option>
+                <option value="20">20% - Very Good</option>
+                <option value="10">10% - Good</option>
+                <option value="5">5% - Slow</option>
+                <option value="0">0% - Bad</option>
+            </select>
+        </div>
+        <div class="sub4">
+            <p>How many people are sharing the bill?</p>
+            <input type="text" id ="total_ppl" class="total_ppl"><span>people</span>
+            <button onclick ="tip_calc()">CALCULATE!</button>
+        </div>
+        <div class="sub5">
+            <p id ="display" class="display"></p>
+        </div>
+        
+    </div>
+    <script>
+        function tip_calc(){
+        var amount = document.getElementById("total_amt").value;
+        var tip_rating = document.getElementById("tip_rating");
+        var tip_amount = tip_rating.value;
+        var people = document.getElementById("total_ppl").value;
+        var total_tip = parseFloat(amount*tip_amount/100);
+        if(people == ""){
+            document.getElementById("display").innerHTML = (`TIP AMOUNT $ <span>${total_tip}</span> <br> overall`);
+        }
+        else{
+            var tip_per_head = parseFloat(total_tip/people);
+            document.getElementById("display").innerHTML = (`TIP AMOUNT $ <span>${tip_per_head}</span> <br> per head`);
+        }
+    }
+
+    </script>
+     
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(232, 205, 34);
+}
+.main{
+    background-color: white;
+    width:25%;
+    margin: 30px auto;
+    height:650px;
+}
+.main div{
+    width:70%;
+    color:maroon;
+    font-weight: 700;
+}
+.sub1{
+    margin: 0px auto;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+.sub1 h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.sub2{
+    margin: 20px auto;
+    text-align: left;
+}
+.sub2 p{
+    font-weight: 700;
+    line-height: 1.5;
+}
+.sub2 span{
+    padding-right: 5px;
+}
+.sub3{
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.5;  
+}
+.sub4 {
+    margin-top: 60px!important;
+    margin: 0px auto;
+    text-align: left;
+}
+.sub4 p{
+    font-weight: 700;
+    line-height: 1.5; 
+}
+.sub4 span{
+    padding-left: 5px;
+}
+button{
+    background-color: maroon;
+    color:white;
+    border:none;
+    width:100%;
+    margin-top: 40px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+.sub5{
+    margin: 0px auto;
+    text-align: center;
+}
+.total_amt{
+    width:100px;
+    height:34px;
+    padding-left: 5px;
+}
+.dropdown{
+    width:160px;
+    padding: 8px 30px 8px 10px;
+}
+.total_ppl{
+    width:100px;
+    height:34px;
+    padding-left: 5px;
+}
+.display{
+    font-size: 15px;
+    width:100px;
+    margin:20px auto;
+}
+.display span{
+    font-size: 35px;
+}
